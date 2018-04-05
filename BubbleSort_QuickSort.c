@@ -7,9 +7,6 @@
 sendo que para cada um deles, devem ser lidos: nome, idade e peso. Implemente os dois algoritmos pesquisados,
 permitindo que sejam listados os atletas em ordem crescente de idade ou peso.*/
 
-
-
-
 struct Atl {
   char nome[50];
   int idade;
@@ -22,13 +19,12 @@ atleta quicksort(atleta *vetor, int len, int opcao);
 atleta qsIdade(atleta *vetor, int left, int right);
 atleta qsPeso(atleta *vetor, int left, int right);
 
-void Quick(atleta *vetor,int inicioVetor, int fimVetor);
-
 void main() {
 	setlocale(LC_ALL, "Portuguese");
   	int opcao, numAtl, i, z, w, y, sair=0, auxIdade;
   	char auxNome[50];
   	float auxPeso;
+  	
 	printf("\t\t***Trabalho Buble Sort e Quick Sort***\n");
 	printf("\t\t***Gabriel Passos e Thomas Soares***\n\n");
    	printf("\nDigite o número de atletas que serão armazenados:  ");
@@ -36,23 +32,24 @@ void main() {
    	fflush(stdin);
     atleta vetAtleta[numAtl];
 	system("cls");
-    for (i=0; i<numAtl; ++i)
-    {
-    	printf("\t\t***Trabalho Buble Sort e Quick Sort***\n");
+	
+    for (i=0; i<numAtl; ++i) {
+		printf("\t\t***Trabalho Buble Sort e Quick Sort***\n");
 		printf("\t\t***Gabriel Passos e Thomas Soares***\n\n");
-    	printf("\nDigite o nome do atleta %d: ", i+1);
-    	scanf("%s",&vetAtleta[i].nome);
-    	fflush(stdin);
-
-      	printf("\nDigite a idade do atleta %d: ", i+1);
-      	scanf("%d",&vetAtleta[i].idade);
-      	fflush(stdin);
-
-      printf("\nDigite o peso [kg] do atleta %d: ", i+1);
-      scanf("%f",&vetAtleta[i].peso);
-      fflush(stdin);
-      system("cls");
+		printf("\nDigite o nome do atleta %d: ", i+1);
+		scanf("%s",&vetAtleta[i].nome);
+		fflush(stdin);
+	
+	  	printf("\nDigite a idade do atleta %d: ", i+1);
+	  	scanf("%d",&vetAtleta[i].idade);
+	  	fflush(stdin);
+	
+		printf("\nDigite o peso [kg] do atleta %d: ", i+1);
+		scanf("%f",&vetAtleta[i].peso);
+		fflush(stdin);
+		system("cls");
     }
+    
     printf("\t\t***Trabalho Buble Sort e Quick Sort***\n");
 	printf("\t\t***Gabriel Passos e Thomas Soares***\n\n");
     printf("Lista desordenada:  \n");
