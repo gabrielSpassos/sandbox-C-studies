@@ -4,7 +4,7 @@
 #define DIM 100000
 #define VAL 84328
 
-void buscaLinear (int vet[DIM]);
+int buscaLinear (int vet[DIM]);
 int buscaBinaria(int vet [DIM]);
 
 void main (void){
@@ -21,13 +21,13 @@ void main (void){
 			
 }
 
-void buscaLinear(int vet [DIM]){
+int buscaLinear(int vet [DIM]){
 	int i;
 
 	for(i=0;i<DIM;i++){
 		if(vet[i] == VAL){
-			printf("\nEncontrado valor %d em %d interacoes!",VAL,i,i);
-			break;
+			printf("\nEncontrado valor %d em %d interacoes!",VAL,i);
+			return 1;
 		}	
 	}
 }
