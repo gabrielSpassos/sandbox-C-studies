@@ -1,5 +1,5 @@
-# C Repository 
+# C Repository
 
-## C Studies 
+## C Studies
 
-Codes were made to run at Windows 
+Some codes were made to run at Windows.
